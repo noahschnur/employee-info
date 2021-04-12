@@ -1,5 +1,4 @@
 const run = require("./src/htmlTemplate.js");
-const info = [];
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { validate } = require("@babel/types");
@@ -44,66 +43,66 @@ async function managerInfo(answers) {
         type: "input",
         name: "name",
         message: "What is this employee's name? (Required)",
-        // validate: (nameInput) => {
-        //   if (nameInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter a name for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (nameInput) => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log("Please enter a name for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "number",
         name: "id",
         message: "What is this employee's ID number? (Required)",
-        // validate: (idInput) => {
-        //   if (idInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an ID number for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (idInput) => {
+          if (idInput) {
+            return true;
+          } else {
+            console.log("Please enter an ID number for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "email",
         message: "What is this employee's email address? (Required)",
-        // validate: (emailInput) => {
-        //   if (emailInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an email address for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (emailInput) => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log("Please enter an email address for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "number",
         name: "office",
         message: "What is this manager's office number? (Required)",
-        // validate: (officeInput) => {
-        //   if (officeInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an office number for this manager");
-        //     return false;
-        //   }
-        // },
+        validate: (officeInput) => {
+          if (officeInput) {
+            return true;
+          } else {
+            console.log("Please enter an office number for this manager");
+            return false;
+          }
+        },
       },
       {
         type: "confirm",
         name: "addMore",
         message: "Do you have any more employees to add?",
         default: false,
-        // validate: (addMoreConfirm) => {
-        //   if (addMoreConfirm) {
-        //     employeeInfo();
-        //   } else {
-        //     info.push(managerInfo);
-        //   }
-        // },
+        validate: (addMoreConfirm) => {
+          if (addMoreConfirm) {
+            employeeInfo();
+          } else {
+            info.push(managerInfo);
+          }
+        },
       },
     ])
     .then((ans) => {
@@ -119,66 +118,66 @@ function engineerInfo() {
         type: "input",
         name: "name",
         message: "What is this employee's name? (Required)",
-        // validate: (nameInput) => {
-        //   if (nameInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter a name for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (nameInput) => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log("Please enter a name for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "number",
         name: "id",
         message: "What is this employee's ID number? (Required)",
-        // validate: (idInput) => {
-        //   if (idInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an ID number for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (idInput) => {
+          if (idInput) {
+            return true;
+          } else {
+            console.log("Please enter an ID number for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "email",
         message: "What is this employee's email address? (Required)",
-        // validate: (emailInput) => {
-        //   if (emailInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an email address for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (emailInput) => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log("Please enter an email address for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "github",
         message: "What is this engineer's GitHub usename? (Required)",
-        // validate: (githubInput) => {
-        //   if (githubInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter a GitHub username for this engineer");
-        //     return false;
-        //   }
-        // },
+        validate: (githubInput) => {
+          if (githubInput) {
+            return true;
+          } else {
+            console.log("Please enter a GitHub username for this engineer");
+            return false;
+          }
+        },
       },
       {
         type: "confirm",
         name: "addMore",
         message: "Do you have any more employees to add?",
         default: false,
-        // validate: (addMoreConfirm) => {
-        //   if (addMoreConfirm) {
-        //     employeeInfo();
-        //   } else {
-        //     info.push(engineerInfo);
-        //   }
-        // },
+        validate: (addMoreConfirm) => {
+          if (addMoreConfirm) {
+            employeeInfo();
+          } else {
+            info.push(engineerInfo);
+          }
+        },
       },
     ])
     .then((ans) => {
@@ -194,66 +193,66 @@ function internInfo() {
         type: "input",
         name: "name",
         message: "What is this employee's name? (Required)",
-        // validate: (nameInput) => {
-        //   if (nameInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter a name for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (nameInput) => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log("Please enter a name for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "number",
         name: "id",
         message: "What is this employee's ID number? (Required)",
-        // validate: (idInput) => {
-        //   if (idInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an ID number for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (idInput) => {
+          if (idInput) {
+            return true;
+          } else {
+            console.log("Please enter an ID number for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "email",
         message: "What is this employee's email address? (Required)",
-        // validate: (emailInput) => {
-        //   if (emailInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter an email address for this employee");
-        //     return false;
-        //   }
-        // },
+        validate: (emailInput) => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log("Please enter an email address for this employee");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "school",
         message: "Where does this intern go to school? (Required)",
-        // validate: (schoolInput) => {
-        //   if (schoolInput) {
-        //     return true;
-        //   } else {
-        //     console.log("Please enter a school for this intern");
-        //     return false;
-        //   }
-        // },
+        validate: (schoolInput) => {
+          if (schoolInput) {
+            return true;
+          } else {
+            console.log("Please enter a school for this intern");
+            return false;
+          }
+        },
       },
       {
         type: "confirm",
         name: "addMore",
         message: "Do you have any more employees to add?",
         default: false,
-        // validate: (addMoreConfirm) => {
-        //   if (addMoreConfirm) {
-        //     employeeInfo();
-        //   } else {
-        //     info.push(internInfo);
-        //   }
-        // },
+        validate: (addMoreConfirm) => {
+          if (addMoreConfirm) {
+            employeeInfo();
+          } else {
+            info.push(internInfo);
+          }
+        },
       },
     ])
     .then((ans) => {
