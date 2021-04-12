@@ -1,5 +1,7 @@
-const { expect } = require("@jest/globals");
+const { expect, jest } = require("@jest/globals");
 const Employee = require("../lib/Employee");
+
+jest.mock("../lib/Employee.js");
 
 test("creates new employee object", () => {
     const employee = new Employee("");
