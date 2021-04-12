@@ -41,6 +41,6 @@ noahschnur@gmail.com, https://github.com/noahschnur
 
 https://github.com/noahschnur/employee-info
 
-https://www.youtube.com/watch?v=iwpJ2mELp7c
+https://www.youtube.com/watch?v=AK26lHgMCIw
 
-[![Alt Text](https://img.youtube.com/vi/iwpJ2mELp7c/0.jpg)](https://www.youtube.com/watch?v=iwpJ2mELp7c)
+[![Alt Text](https://img.youtube.com/vi/AK26lHgMCIw/0.jpg)](https://www.youtube.com/watch?v=AK26lHgMCIw)
