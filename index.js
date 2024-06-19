@@ -18,7 +18,7 @@ async function employeeInfo() {
     .then((answers) => {
       switch (answers.title) {
         case "Manager":
-          console.log("anyhting");
+          console.log("anything");
           managerInfo(answers);
           break;
         case "Engineer":
